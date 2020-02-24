@@ -17,6 +17,9 @@
 
 LOCAL_PATH := device/asus/X00P
 
+# Utils
+$(call inherit-product, $(LOCAL_PATH)/utils.mk)
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
