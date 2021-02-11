@@ -17,6 +17,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 #
+# All components inherited here go to product image
+#
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
+
+#
 # All components inherited here go to vendor image
 #
 # TODO(b/136525499): move *_vendor.mk into the vendor makefile later
@@ -26,16 +31,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 # Inherit from X00P device
 $(call inherit-product, device/asus/X00P/device.mk)
 
-# Inherit PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
-
-# PixelExperience specifics
-TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Device identifiers.
 PRODUCT_DEVICE := X00P
