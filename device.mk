@@ -383,7 +383,8 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/qcom-caf/msm8996
+    hardware/qcom-caf/msm8996 \
+    vendor/qcom/opensource/data-ipa-cfg-mgr
 
 # Source
 PRODUCT_HOST_PACKAGES += \
