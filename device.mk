@@ -389,6 +389,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Source
+PRODUCT_HOST_PACKAGES += \
+    signapk \
+    avbtool \
+    brotli \
+    aapt2 \
+    debugfs \
+    zipalign
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
