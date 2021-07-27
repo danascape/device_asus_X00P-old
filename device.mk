@@ -225,7 +225,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.asus_X00P
+    android.hardware.light@2.0-service.X00P
 
 # Media
 PRODUCT_PACKAGES += \
