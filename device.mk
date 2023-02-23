@@ -158,6 +158,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4-service.clearkey
 
+# Encryption
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.crypto.volume.contents_mode=aes-256-xts
+
 # For config.fs
 PRODUCT_PACKAGES += \
     fs_config_files
